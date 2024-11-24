@@ -82,7 +82,7 @@ export default function Resume() {
                         {
                             frontEndSkills.map(item => (
                                 <div key={item.id} className="flex flex-row gap-2 px-2 py-1 rounded-md bg-background items-center text-black">
-                                    <Image src={item.image} alt={`${item.image}`} className="w-5 h-5" />
+                                    <Image src={item.image} alt={`${item.image}`} className="w-5 h-5" width={20} height={20}/>
                                     <p className='text-center'>{item.name}</p>
                                 </div>
                             ))
@@ -95,7 +95,7 @@ export default function Resume() {
                         {
                             backEndSkills.map(item => (
                                 <div key={item.id} className="flex flex-row gap-2 px-2 py-1 rounded-md bg-background items-center text-black">
-                                    <Image src={item.image} alt={`${item.image}`} className="w-5 h-5" />
+                                    <Image src={item.image} alt={`${item.image}`} className="w-5 h-5" width={20} height={20} />
                                     <p className='text-center'>{item.name}</p>
                                 </div>
                             ))
@@ -108,7 +108,7 @@ export default function Resume() {
                         {
                             database.map(item => (
                                 <div key={item.id} className="flex flex-row gap-2 px-2 py-1 rounded-md bg-background items-center text-black">
-                                    <Image src={item.image} alt={`${item.image}`} className="w-5 h-5" />
+                                    <Image src={item.image} alt={`${item.image}`} className="w-5 h-5" width={20} height={20} />
                                     <p className='text-center'>{item.name}</p>
                                 </div>
                             ))
@@ -121,7 +121,7 @@ export default function Resume() {
                         {
                             versionControl.map(item => (
                                 <div key={item.id} className="flex flex-row gap-2 px-2 py-1 rounded-md bg-background items-center text-black">
-                                    <Image src={item.image} alt={`${item.image}`} className="w-5 h-5" />
+                                    <Image src={item.image} alt={`${item.image}`} className="w-5 h-5" width={20} height={20} />
                                     <p className='text-center'>{item.name}</p>
                                 </div>
                             ))
@@ -132,9 +132,10 @@ export default function Resume() {
 
                 <TabsContent value="experience">
                     <h6>My Work</h6>
-                    <p className="text-accent-foreground mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores laborum commodi unde deleniti dignissimos. Molestiae, magnam dolorem enim minus atque doloribus, ut, facere ipsam nostrum illo possimus in provident suscipit.</p>
-                    <p className="text-accent-foreground mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores laborum commodi unde deleniti dignissimos. Molestiae, magnam dolorem enim minus atque doloribus, ut, facere ipsam nostrum illo possimus in provident suscipit.</p>
-                     
+                    <p className="text-accent-foreground mt-2">Collaborated with a cross-functional team to design and develop a scalable customer-facing mobile application and an ERP admin panel supporting multiple departments. Delivered a seamless native experience across mobile platforms using Cordova. </p>
+                    <p className="text-accent-foreground mt-2">Contributed to the development of a high-performance React application, implementing client-side caching for millions of paginated records. Optimized orders and reports sections to boost data retrieval speeds, enhancing user experience.</p>
+                    <p className="text-accent-foreground mt-2">Integrated barcode scanning for real-time inventory updates and ERP synchronization in a textile-based SaaS product, improving purchase order creation, tracking, and operational efficiency.</p>
+                    <p className="text-accent-foreground mt-2">Enhanced the performance and SEO of an eCommerce application by leveraging server-side rendering (SSR) for dynamic pages. Implemented type-safe API validation to ensure data integrity and optimized load times with code splitting and lazy loading.</p>                     
                 </TabsContent>
 
             </MotionTabs>

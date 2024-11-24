@@ -72,27 +72,23 @@ export const SERVICES = Object.freeze([
 export const PROJECTS = Object.freeze([
     {
         id: 1,
-        title: "Project 1",
-        description: "Project description here",
+        title: "WearIt - Clothing Store eCommerce App",
+        description: "WearIt is an intuitive and user-friendly eCommerce app designed for a seamless online shopping experience at a clothing store. With WearIt, users can easily browse and select from a wide range of stylish clothing options for all ages and genders. The app allows for quick ordering, real-time inventory updates, and smooth checkout processes. Whether you're looking for casual wear or formal attire, WearIt makes fashion shopping accessible and convenient right at your fingertips.",
         category: "FullStack Development",
-        image: "/pro1.png",
-        stack: ["React", "Express Js", "MongoDB"]
+        image: "/wearit-client.png",
+        stack: ["React", "Express Js", "MongoDB"],
+        githubLink: 'https://github.com/Sabarinathan-V/wearit-ecommerce-frontend',
+        websiteLink: 'https://wearit-ecommerce.netlify.app'
     },
     {
         id: 2,
-        title: "Project 2",
-        description: "Project description here",
+        title: "WearIt Admin - Product and Order Management Dashboard",
+        description: "WearIt Admin Panel is a robust and efficient web-based platform designed to manage the backend of the WearIt eCommerce app. This admin site allows store owners to easily add, list, and edit product details, ensuring that the inventory is always up-to-date. The admin panel also provides seamless order management, enabling administrators to view, process, and track customer orders in real-time.",
         category: "FullStack Development",
-        image: "/pro2.png",
-        stack: ["React", "Express Js", "MongoDB"]
-    },
-    {
-        id: 3,
-        title: "Project 3",
-        description: "Project description here",
-        category: "FullStack Development",
-        image: "/pro1.png",
-        stack: ["React", "Express Js", "MongoDB"]
+        image: "/wearit-admin.png",
+        stack: ["React", "Express Js", "MongoDB"],
+        githubLink: 'https://github.com/Sabarinathan-V/wearit-ecommerce-admin',
+        websiteLink: 'https://wearit-admin.netlify.app'
     },
 
 ])
