@@ -13,7 +13,7 @@ import "swiper/css";
 import { ArrowLeft, ArrowRight, ChevronLeft, ChevronRight, ExternalLink, } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export default function page() {
+export default function Page() {
 
     const [swiper, setSwiper] = useState(null);
     const [currentProject, setCurrentProject] = useState(PROJECTS[0]);

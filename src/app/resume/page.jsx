@@ -2,6 +2,7 @@ import { TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { backEndSkills, database, frontEndSkills, versionControl } from "@/utils/data";
 import { transition, variants } from "@/utils/framer_variants";
 import { MotionButton, MotionDiv, MotionImage, MotionTabs } from "@/utils/motionTags";
+import Image from "next/image";
 ;
 
 export default function Resume() {
@@ -81,7 +82,7 @@ export default function Resume() {
                         {
                             frontEndSkills.map(item => (
                                 <div key={item.id} className="flex flex-row gap-2 px-2 py-1 rounded-md bg-background items-center text-black">
-                                    <img src={item.image} className="w-5 h-5" />
+                                    <Image src={item.image} alt={`${item.image}`} className="w-5 h-5" />
                                     <p className='text-center'>{item.name}</p>
                                 </div>
                             ))
@@ -94,7 +95,7 @@ export default function Resume() {
                         {
                             backEndSkills.map(item => (
                                 <div key={item.id} className="flex flex-row gap-2 px-2 py-1 rounded-md bg-background items-center text-black">
-                                    <img src={item.image} className="w-5 h-5" />
+                                    <Image src={item.image} alt={`${item.image}`} className="w-5 h-5" />
                                     <p className='text-center'>{item.name}</p>
                                 </div>
                             ))
@@ -107,7 +108,7 @@ export default function Resume() {
                         {
                             database.map(item => (
                                 <div key={item.id} className="flex flex-row gap-2 px-2 py-1 rounded-md bg-background items-center text-black">
-                                    <img src={item.image} className="w-5 h-5" />
+                                    <Image src={item.image} alt={`${item.image}`} className="w-5 h-5" />
                                     <p className='text-center'>{item.name}</p>
                                 </div>
                             ))
@@ -120,7 +121,7 @@ export default function Resume() {
                         {
                             versionControl.map(item => (
                                 <div key={item.id} className="flex flex-row gap-2 px-2 py-1 rounded-md bg-background items-center text-black">
-                                    <img src={item.image} className="w-5 h-5" />
+                                    <Image src={item.image} alt={`${item.image}`} className="w-5 h-5" />
                                     <p className='text-center'>{item.name}</p>
                                 </div>
                             ))
