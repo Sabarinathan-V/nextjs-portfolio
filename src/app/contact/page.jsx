@@ -5,7 +5,7 @@ import ContactForm from "../components/containers/ContactForm";
 
 export default function page() {
     return(
-        <div className="container grid place-items-center h-scree pt-20 2xl:pt-0 bg-accent">
+        <div className="container grid place-items-center h-scree pt-20 bg-accent">
 
             <div className="absolute left-0 right-0 bottom-0 top-[85px] sm:top-[80px] bg-accent">
                 <Image
