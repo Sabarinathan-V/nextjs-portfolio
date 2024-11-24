@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* @layer base {
+  :root {
+    --background: 246 46% 37%;
+    --foreground: 210 40% 96.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 42 79% 54%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --accent: 247 50% 28%;
+    --accent-foreground: 246 64% 75%;
+    --border: 247 91% 68%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+    --destructive: 0 96% 74%;
+  }
+} */
+
+@layer base {
+  :root {
+    --background: 120 20% 96%;
+    --foreground: 120 25% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 120 25% 20%;
+    --popover: 8 100% 77%;
+    --popover-foreground: 36 61% 86%;
+    --primary: 120 40% 45%;
+    --secondary: 120 15% 90%;
+    --secondary-foreground: 120 25% 20%;
+    --accent: 150 40% 55%;
+    --accent-foreground: 120 20% 96%;
+    --border: 120 25% 80%;
+    --input: 120 15% 90%;
+    --ring: 120 40% 45%;
+    --radius: 0.5rem;
+    --destructive: 0 90% 60%;
+  } 
+}
+   
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1{
+    @apply md:text-7xl text-5xl !leading-[1.10];
+  }
+  h1 span, h3 span{
+    @apply text-primary;
+  }
+  h3{
+    @apply sm:text-3xl text-2xl font-semibold;
+  }
+  h5{
+    @apply text-accent-foreground font-medium text-lg
+  }
+  h6{
+    @apply text-accent-foreground font-medium text-lg
+  }
+  p{
+    @apply sm:text-base text-sm;
+  }
+  li,p,a,h5,h4,button{
+    @apply tracking-wider;
+  }
+}
+
+button:disabled{
+  @apply opacity-50;
+}
